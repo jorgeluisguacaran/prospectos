@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Prospecto: one
+  nombre_referido: MyString
+  ocupacion_referido: MyString
+  telefono_referido: 1
+
+two:
+  Prospecto: two
+  nombre_referido: MyString
+  ocupacion_referido: MyString
+  telefono_referido: 1

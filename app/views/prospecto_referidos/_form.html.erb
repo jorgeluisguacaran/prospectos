@@ -1,0 +1,37 @@
+<%= form_for(prospecto_referido) do |f| %>
+  <% if prospecto_referido.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(prospecto_referido.errors.count, "error") %> prohibited this prospecto_referido from being saved:</h2>
+
+      <ul>
+      <% prospecto_referido.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Prospecto_id %>
+    <%= f.text_field :Prospecto_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :nombre_referido %>
+    <%= f.text_field :nombre_referido %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ocupacion_referido %>
+    <%= f.text_field :ocupacion_referido %>
+  </div>
+
+  <div class="field">
+    <%= f.label :telefono_referido %>
+    <%= f.number_field :telefono_referido %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

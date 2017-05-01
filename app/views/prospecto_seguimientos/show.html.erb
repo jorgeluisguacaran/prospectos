@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Prospecto:</strong>
+  <%= @prospecto_seguimiento.Prospecto %>
+</p>
+
+<p>
+  <strong>Escala interes:</strong>
+  <%= @prospecto_seguimiento.escala_interes %>
+</p>
+
+<p>
+  <strong>Ayuda subir nivel:</strong>
+  <%= @prospecto_seguimiento.ayuda_subir_nivel %>
+</p>
+
+<p>
+  <strong>Fecha proxima reunion:</strong>
+  <%= @prospecto_seguimiento.fecha_proxima_reunion %>
+</p>
+
+<p>
+  <strong>Aspira salario:</strong>
+  <%= @prospecto_seguimiento.aspira_salario %>
+</p>
+
+<p>
+  <strong>Promediohora:</strong>
+  <%= @prospecto_seguimiento.PromedioHora %>
+</p>
+
+<p>
+  <strong>Promediomes:</strong>
+  <%= @prospecto_seguimiento.PromedioMes %>
+</p>
+
+<p>
+  <strong>Dispuesto a comenzar:</strong>
+  <%= @prospecto_seguimiento.dispuesto_a_comenzar %>
+</p>
+
+<p>
+  <strong>Estatus:</strong>
+  <%= @prospecto_seguimiento.estatus %>
+</p>
+
+<%= link_to 'Edit', edit_prospecto_seguimiento_path(@prospecto_seguimiento) %> |
+<%= link_to 'Back', prospecto_seguimientos_path %>

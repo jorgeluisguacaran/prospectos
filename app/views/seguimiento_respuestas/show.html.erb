@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @seguimiento_respuesta.descripcion %>
+</p>
+
+<p>
+  <strong>Estatus:</strong>
+  <%= @seguimiento_respuesta.estatus %>
+</p>
+
+<%= link_to 'Edit', edit_seguimiento_respuesta_path(@seguimiento_respuesta) %> |
+<%= link_to 'Back', seguimiento_respuestas_path %>

@@ -1,0 +1,1 @@
+json.array! @prospecto_meta_mediano_plazos, partial: 'prospecto_meta_mediano_plazos/prospecto_meta_mediano_plazo', as: :prospecto_meta_mediano_plazo

@@ -1,0 +1,2 @@
+json.extract! prospecto_cliente_producto, :id, :Prospecto_id, :Producto_id, :cantidad, :fecha_entrega, :fecha_reposicion, :created_at, :updated_at
+json.url prospecto_cliente_producto_url(prospecto_cliente_producto, format: :json)

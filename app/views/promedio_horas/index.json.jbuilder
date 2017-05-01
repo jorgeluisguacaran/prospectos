@@ -1,0 +1,1 @@
+json.array! @promedio_horas, partial: 'promedio_horas/promedio_hora', as: :promedio_hora

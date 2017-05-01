@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  prospecto: one
+  meta_larga: MyString
+  estatus: false
+
+two:
+  prospecto: two
+  meta_larga: MyString
+  estatus: false

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Prospecto:</strong>
+  <%= @prospecto_ocupacion.Prospecto %>
+</p>
+
+<p>
+  <strong>Ocupacion:</strong>
+  <%= @prospecto_ocupacion.ocupacion %>
+</p>
+
+<p>
+  <strong>Estatus:</strong>
+  <%= @prospecto_ocupacion.estatus %>
+</p>
+
+<%= link_to 'Edit', edit_prospecto_ocupacion_path(@prospecto_ocupacion) %> |
+<%= link_to 'Back', prospecto_ocupaciones_path %>

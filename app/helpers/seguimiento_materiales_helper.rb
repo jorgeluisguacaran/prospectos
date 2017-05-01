@@ -1,0 +1,2 @@
+module SeguimientoMaterialesHelper
+end

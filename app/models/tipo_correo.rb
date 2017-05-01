@@ -1,0 +1,2 @@
+class TipoCorreo < ApplicationRecord
+end

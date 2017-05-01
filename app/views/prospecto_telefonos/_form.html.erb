@@ -1,0 +1,37 @@
+<%= form_for(prospecto_telefono) do |f| %>
+  <% if prospecto_telefono.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(prospecto_telefono.errors.count, "error") %> prohibited this prospecto_telefono from being saved:</h2>
+
+      <ul>
+      <% prospecto_telefono.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Prospecto_id %>
+    <%= f.text_field :Prospecto_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :telefono %>
+    <%= f.number_field :telefono %>
+  </div>
+
+  <div class="field">
+    <%= f.label :TipoTelefono_id %>
+    <%= f.text_field :TipoTelefono_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :estatus %>
+    <%= f.check_box :estatus %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,1 @@
+json.partial! "seguimiento_materiales/seguimiento_material", seguimiento_material: @seguimiento_material

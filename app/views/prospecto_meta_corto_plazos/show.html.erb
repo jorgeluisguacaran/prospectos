@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Prospecto:</strong>
+  <%= @prospecto_meta_corto_plazo.prospecto %>
+</p>
+
+<p>
+  <strong>Meta corta:</strong>
+  <%= @prospecto_meta_corto_plazo.meta_corta %>
+</p>
+
+<p>
+  <strong>Estatus:</strong>
+  <%= @prospecto_meta_corto_plazo.estatus %>
+</p>
+
+<%= link_to 'Edit', edit_prospecto_meta_corto_plazo_path(@prospecto_meta_corto_plazo) %> |
+<%= link_to 'Back', prospecto_meta_corto_plazos_path %>

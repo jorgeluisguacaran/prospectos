@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Prospecto: one
+  ocupacion: MyString
+  estatus: false
+
+two:
+  Prospecto: two
+  ocupacion: MyString
+  estatus: false

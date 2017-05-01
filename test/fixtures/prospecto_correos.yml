@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Prospecto: one
+  correo: MyString
+  TipoCorreo: one
+  estatus: false
+
+two:
+  Prospecto: two
+  correo: MyString
+  TipoCorreo: two
+  estatus: false

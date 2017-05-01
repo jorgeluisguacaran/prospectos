@@ -1,0 +1,77 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Primer nombre:</strong>
+  <%= @prospecto.primer_nombre %>
+</p>
+
+<p>
+  <strong>Teléfono 1:</strong>
+  <%= @prospecto.telefono1 %>
+</p>
+
+<p>
+  <strong>Teléfono 2:</strong>
+  <%= @prospecto.telefono2 %>
+</p>
+
+<p>
+  <strong>¿A qué se dedica?:</strong>
+  <%= @prospecto.dedicacion %>
+</p>
+<p>
+  <strong>Email:</strong>  
+  <%= @prospecto.correo %>
+</p>
+
+<p>
+  <strong>Donde se conocio:</strong>
+  <%= @prospecto.donde_se_conocio %>
+</p>
+
+<p>
+  <strong>Marcas del Prospecto:</strong>
+  <%= @prospecto.marca %>
+  <% if @prospecto.educable?  then %>
+    <%=    "Educable"  %>  
+  <% end %>
+  <% if @prospecto.influyente? then %>
+    <%=  "Influyente"  %>  
+  <% end %>
+  <% if @prospecto.emprendedor? then  %>  
+    <%=  "Emprendedor"  %>  
+  <% end %>
+  <% if @prospecto.exitoso? then  %>  
+    <%=  "Exitoso" %>
+  <% end %> 
+                                                                                                                                                 
+</p>
+
+<p>
+  <strong>Twitter:</strong>
+  <%= @prospecto.twitter %>
+</p>
+
+<p>
+  <strong>Facebook:</strong>
+  <%= @prospecto.facebook %>
+</p>
+
+<p>
+  <strong>Instagram:</strong>
+  <%= @prospecto.instagram %>
+</p>
+
+
+<p>
+  <strong>Buena referencia:</strong>
+  <%= @prospecto.buena_referencia %>
+</p>
+
+<p>
+  <strong>Llamar en seis meses:</strong>
+  <%= @prospecto.llamar_en_seis_meses %>
+</p>
+
+<%= link_to 'Editar', edit_prospecto_path(@prospecto) %> |
+<%= link_to 'Regresar', prospectos_path %>

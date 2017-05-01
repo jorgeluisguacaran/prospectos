@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Prospecto:</strong>
+  <%= @prospecto_plan.Prospecto %>
+</p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @prospecto_plan.Usuario %>
+</p>
+
+<p>
+  <strong>Plan:</strong>
+  <%= @prospecto_plan.Plan %>
+</p>
+
+<p>
+  <strong>Estatus:</strong>
+  <%= @prospecto_plan.estatus %>
+</p>
+
+<%= link_to 'Edit', edit_prospecto_plan_path(@prospecto_plan) %> |
+<%= link_to 'Back', prospecto_planes_path %>

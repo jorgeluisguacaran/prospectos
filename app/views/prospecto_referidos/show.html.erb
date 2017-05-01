@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Prospecto:</strong>
+  <%= @prospecto_referido.Prospecto %>
+</p>
+
+<p>
+  <strong>Nombre referido:</strong>
+  <%= @prospecto_referido.nombre_referido %>
+</p>
+
+<p>
+  <strong>Ocupacion referido:</strong>
+  <%= @prospecto_referido.ocupacion_referido %>
+</p>
+
+<p>
+  <strong>Telefono referido:</strong>
+  <%= @prospecto_referido.telefono_referido %>
+</p>
+
+<%= link_to 'Edit', edit_prospecto_referido_path(@prospecto_referido) %> |
+<%= link_to 'Back', prospecto_referidos_path %>

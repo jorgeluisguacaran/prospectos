@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Prospecto:</strong>
+  <%= @prospecto_meta_largo_plazo.prospecto %>
+</p>
+
+<p>
+  <strong>Meta larga:</strong>
+  <%= @prospecto_meta_largo_plazo.meta_larga %>
+</p>
+
+<p>
+  <strong>Estatus:</strong>
+  <%= @prospecto_meta_largo_plazo.estatus %>
+</p>
+
+<%= link_to 'Edit', edit_prospecto_meta_largo_plazo_path(@prospecto_meta_largo_plazo) %> |
+<%= link_to 'Back', prospecto_meta_largo_plazos_path %>

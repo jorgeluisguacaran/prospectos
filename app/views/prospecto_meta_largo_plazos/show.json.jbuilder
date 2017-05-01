@@ -1,0 +1,1 @@
+json.partial! "prospecto_meta_largo_plazos/prospecto_meta_largo_plazo", prospecto_meta_largo_plazo: @prospecto_meta_largo_plazo

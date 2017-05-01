@@ -1,0 +1,1 @@
+json.array! @prospecto_referidos, partial: 'prospecto_referidos/prospecto_referido', as: :prospecto_referido

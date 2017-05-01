@@ -1,0 +1,2 @@
+module SeguimientoRespuestasHelper
+end

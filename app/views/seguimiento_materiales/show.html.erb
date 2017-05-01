@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @seguimiento_material.descripcion %>
+</p>
+
+<p>
+  <strong>Estatus:</strong>
+  <%= @seguimiento_material.estatus %>
+</p>
+
+<%= link_to 'Edit', edit_seguimiento_material_path(@seguimiento_material) %> |
+<%= link_to 'Back', seguimiento_materiales_path %>

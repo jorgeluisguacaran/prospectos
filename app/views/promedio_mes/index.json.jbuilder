@@ -1,0 +1,1 @@
+json.array! @promedio_mes, partial: 'promedio_mes/promedio_me', as: :promedio_me

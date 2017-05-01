@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @usuario_plan.Usuario %>
+</p>
+
+<p>
+  <strong>Plan:</strong>
+  <%= @usuario_plan.Plan %>
+</p>
+
+<p>
+  <strong>Nro personas:</strong>
+  <%= @usuario_plan.nro_personas %>
+</p>
+
+<p>
+  <strong>Fecha asignacion:</strong>
+  <%= @usuario_plan.fecha_asignacion %>
+</p>
+
+<p>
+  <strong>Estatus:</strong>
+  <%= @usuario_plan.estatus %>
+</p>
+
+<%= link_to 'Edit', edit_usuario_plan_path(@usuario_plan) %> |
+<%= link_to 'Back', usuario_planes_path %>

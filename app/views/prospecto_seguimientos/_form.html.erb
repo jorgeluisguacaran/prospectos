@@ -1,0 +1,62 @@
+<%= form_for(prospecto_seguimiento) do |f| %>
+  <% if prospecto_seguimiento.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(prospecto_seguimiento.errors.count, "error") %> prohibited this prospecto_seguimiento from being saved:</h2>
+
+      <ul>
+      <% prospecto_seguimiento.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Prospecto_id %>
+    <%= f.text_field :Prospecto_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :escala_interes %>
+    <%= f.number_field :escala_interes %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ayuda_subir_nivel %>
+    <%= f.text_field :ayuda_subir_nivel %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fecha_proxima_reunion %>
+    <%= f.date_select :fecha_proxima_reunion %>
+  </div>
+
+  <div class="field">
+    <%= f.label :aspira_salario %>
+    <%= f.text_field :aspira_salario %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PromedioHora_id %>
+    <%= f.text_field :PromedioHora_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PromedioMes_id %>
+    <%= f.text_field :PromedioMes_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dispuesto_a_comenzar %>
+    <%= f.check_box :dispuesto_a_comenzar %>
+  </div>
+
+  <div class="field">
+    <%= f.label :estatus %>
+    <%= f.check_box :estatus %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

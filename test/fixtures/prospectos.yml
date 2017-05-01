@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  primer_nombre: MyString
+  segundo_nombre: MyString
+  primer_apellido: MyString
+  segundo_apellido: MyString
+  cedula: MyString
+  twitter: MyString
+  facebook: MyString
+  instagram: MyString
+  donde_se_conocio: MyString
+  google_plus: MyString
+  buena_referencia: MyString
+  llamar_en_seis_meses: false
+
+two:
+  primer_nombre: MyString
+  segundo_nombre: MyString
+  primer_apellido: MyString
+  segundo_apellido: MyString
+  cedula: MyString
+  twitter: MyString
+  facebook: MyString
+  instagram: MyString
+  donde_se_conocio: MyString
+  google_plus: MyString
+  buena_referencia: MyString
+  llamar_en_seis_meses: false

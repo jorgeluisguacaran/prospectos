@@ -1,0 +1,1 @@
+json.array! @prospecto_ocupaciones, partial: 'prospecto_ocupaciones/prospecto_ocupacion', as: :prospecto_ocupacion

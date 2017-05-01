@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Usuario: one
+  Plan: one
+  nro_personas: 1
+  fecha_asignacion: 2016-10-05
+  estatus: false
+
+two:
+  Usuario: two
+  Plan: two
+  nro_personas: 1
+  fecha_asignacion: 2016-10-05
+  estatus: false

@@ -1,0 +1,1 @@
+json.array! @seguimiento_materiales, partial: 'seguimiento_materiales/seguimiento_material', as: :seguimiento_material

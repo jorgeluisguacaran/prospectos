@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Prospecto: one
+  escala_interes: 1
+  ayuda_subir_nivel: MyString
+  fecha_proxima_reunion: 2016-10-05
+  aspira_salario: 1.5
+  PromedioHora: one
+  PromedioMes: one
+  dispuesto_a_comenzar: false
+  estatus: false
+
+two:
+  Prospecto: two
+  escala_interes: 1
+  ayuda_subir_nivel: MyString
+  fecha_proxima_reunion: 2016-10-05
+  aspira_salario: 1.5
+  PromedioHora: two
+  PromedioMes: two
+  dispuesto_a_comenzar: false
+  estatus: false

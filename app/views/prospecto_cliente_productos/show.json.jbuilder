@@ -1,0 +1,1 @@
+json.partial! "prospecto_cliente_productos/prospecto_cliente_producto", prospecto_cliente_producto: @prospecto_cliente_producto

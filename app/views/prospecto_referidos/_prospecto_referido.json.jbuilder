@@ -1,0 +1,2 @@
+json.extract! prospecto_referido, :id, :Prospecto_id, :nombre_referido, :ocupacion_referido, :telefono_referido, :created_at, :updated_at
+json.url prospecto_referido_url(prospecto_referido, format: :json)

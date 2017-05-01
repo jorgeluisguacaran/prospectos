@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Prospecto:</strong>
+  <%= @prospecto_cliente_producto.Prospecto %>
+</p>
+
+<p>
+  <strong>Producto:</strong>
+  <%= @prospecto_cliente_producto.Producto %>
+</p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @prospecto_cliente_producto.cantidad %>
+</p>
+
+<p>
+  <strong>Fecha entrega:</strong>
+  <%= @prospecto_cliente_producto.fecha_entrega %>
+</p>
+
+<p>
+  <strong>Fecha reposicion:</strong>
+  <%= @prospecto_cliente_producto.fecha_reposicion %>
+</p>
+
+<%= link_to 'Edit', edit_prospecto_cliente_producto_path(@prospecto_cliente_producto) %> |
+<%= link_to 'Back', prospecto_cliente_productos_path %>

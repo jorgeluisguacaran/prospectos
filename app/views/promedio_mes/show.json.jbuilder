@@ -1,0 +1,1 @@
+json.partial! "promedio_mes/promedio_me", promedio_me: @promedio_me

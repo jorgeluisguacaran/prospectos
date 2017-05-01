@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Prospecto:</strong>
+  <%= @prospecto_correo.Prospecto %>
+</p>
+
+<p>
+  <strong>Correo:</strong>
+  <%= @prospecto_correo.correo %>
+</p>
+
+<p>
+  <strong>Tipocorreo:</strong>
+  <%= @prospecto_correo.TipoCorreo %>
+</p>
+
+<p>
+  <strong>Estatus:</strong>
+  <%= @prospecto_correo.estatus %>
+</p>
+
+<%= link_to 'Edit', edit_prospecto_correo_path(@prospecto_correo) %> |
+<%= link_to 'Back', prospecto_correos_path %>

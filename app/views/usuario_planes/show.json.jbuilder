@@ -1,0 +1,1 @@
+json.partial! "usuario_planes/usuario_plan", usuario_plan: @usuario_plan

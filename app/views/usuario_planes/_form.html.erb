@@ -1,0 +1,42 @@
+<%= form_for(usuario_plan) do |f| %>
+  <% if usuario_plan.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(usuario_plan.errors.count, "error") %> prohibited this usuario_plan from being saved:</h2>
+
+      <ul>
+      <% usuario_plan.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Usuario_id %>
+    <%= f.text_field :Usuario_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Plan_id %>
+    <%= f.text_field :Plan_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :nro_personas %>
+    <%= f.number_field :nro_personas %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fecha_asignacion %>
+    <%= f.date_select :fecha_asignacion %>
+  </div>
+
+  <div class="field">
+    <%= f.label :estatus %>
+    <%= f.check_box :estatus %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

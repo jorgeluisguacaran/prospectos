@@ -1,0 +1,27 @@
+<%= form_for(tipo_correo) do |f| %>
+  <% if tipo_correo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tipo_correo.errors.count, "error") %> prohibited this tipo_correo from being saved:</h2>
+
+      <ul>
+      <% tipo_correo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :descripcion %>
+    <%= f.text_field :descripcion %>
+  </div>
+
+  <div class="field">
+    <%= f.label :estatus %>
+    <%= f.check_box :estatus %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

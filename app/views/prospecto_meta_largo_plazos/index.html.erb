@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Prospecto Meta Largo Plazos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Prospecto</th>
+      <th>Meta larga</th>
+      <th>Estatus</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @prospecto_meta_largo_plazos.each do |prospecto_meta_largo_plazo| %>
+      <tr>
+        <td><%= prospecto_meta_largo_plazo.prospecto %></td>
+        <td><%= prospecto_meta_largo_plazo.meta_larga %></td>
+        <td><%= prospecto_meta_largo_plazo.estatus %></td>
+        <td><%= link_to 'Show', prospecto_meta_largo_plazo %></td>
+        <td><%= link_to 'Edit', edit_prospecto_meta_largo_plazo_path(prospecto_meta_largo_plazo) %></td>
+        <td><%= link_to 'Destroy', prospecto_meta_largo_plazo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Prospecto Meta Largo Plazo', new_prospecto_meta_largo_plazo_path %>

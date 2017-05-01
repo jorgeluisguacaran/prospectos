@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Prospecto:</strong>
+  <%= @prospecto_marca.Prospecto %>
+</p>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @prospecto_marca.Marca %>
+</p>
+
+<p>
+  <strong>Estatus:</strong>
+  <%= @prospecto_marca.estatus %>
+</p>
+
+<%= link_to 'Edit', edit_prospecto_marca_path(@prospecto_marca) %> |
+<%= link_to 'Back', prospecto_marcas_path %>

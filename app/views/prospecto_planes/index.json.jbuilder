@@ -1,0 +1,1 @@
+json.array! @prospecto_planes, partial: 'prospecto_planes/prospecto_plan', as: :prospecto_plan

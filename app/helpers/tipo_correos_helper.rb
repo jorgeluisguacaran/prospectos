@@ -1,0 +1,2 @@
+module TipoCorreosHelper
+end

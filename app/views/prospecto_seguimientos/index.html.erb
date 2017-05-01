@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Prospecto Seguimientos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Prospecto</th>
+      <th>Escala interes</th>
+      <th>Ayuda subir nivel</th>
+      <th>Fecha proxima reunion</th>
+      <th>Aspira salario</th>
+      <th>Promediohora</th>
+      <th>Promediomes</th>
+      <th>Dispuesto a comenzar</th>
+      <th>Estatus</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @prospecto_seguimientos.each do |prospecto_seguimiento| %>
+      <tr>
+        <td><%= prospecto_seguimiento.Prospecto %></td>
+        <td><%= prospecto_seguimiento.escala_interes %></td>
+        <td><%= prospecto_seguimiento.ayuda_subir_nivel %></td>
+        <td><%= prospecto_seguimiento.fecha_proxima_reunion %></td>
+        <td><%= prospecto_seguimiento.aspira_salario %></td>
+        <td><%= prospecto_seguimiento.PromedioHora %></td>
+        <td><%= prospecto_seguimiento.PromedioMes %></td>
+        <td><%= prospecto_seguimiento.dispuesto_a_comenzar %></td>
+        <td><%= prospecto_seguimiento.estatus %></td>
+        <td><%= link_to 'Show', prospecto_seguimiento %></td>
+        <td><%= link_to 'Edit', edit_prospecto_seguimiento_path(prospecto_seguimiento) %></td>
+        <td><%= link_to 'Destroy', prospecto_seguimiento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Prospecto Seguimiento', new_prospecto_seguimiento_path %>

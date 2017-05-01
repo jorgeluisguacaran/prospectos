@@ -1,0 +1,1 @@
+json.partial! "prospecto_planes/prospecto_plan", prospecto_plan: @prospecto_plan

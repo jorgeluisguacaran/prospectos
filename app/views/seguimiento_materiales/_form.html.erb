@@ -1,0 +1,27 @@
+<%= form_for(seguimiento_material) do |f| %>
+  <% if seguimiento_material.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(seguimiento_material.errors.count, "error") %> prohibited this seguimiento_material from being saved:</h2>
+
+      <ul>
+      <% seguimiento_material.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :descripcion %>
+    <%= f.text_field :descripcion %>
+  </div>
+
+  <div class="field">
+    <%= f.label :estatus %>
+    <%= f.check_box :estatus %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @promedio_hora.descripcion %>
+</p>
+
+<p>
+  <strong>Estatus:</strong>
+  <%= @promedio_hora.estatus %>
+</p>
+
+<%= link_to 'Edit', edit_promedio_hora_path(@promedio_hora) %> |
+<%= link_to 'Back', promedio_horas_path %>

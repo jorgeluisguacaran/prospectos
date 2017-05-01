@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Prospecto Ocupaciones</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Prospecto</th>
+      <th>Ocupacion</th>
+      <th>Estatus</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @prospecto_ocupaciones.each do |prospecto_ocupacion| %>
+      <tr>
+        <td><%= prospecto_ocupacion.Prospecto.inspect %></td>
+        <td><%= prospecto_ocupacion.ocupacion %></td>
+        <td><%= prospecto_ocupacion.estatus %></td>
+        <td><%= link_to 'Show', prospecto_ocupacion %></td>
+        <td><%= link_to 'Edit', edit_prospecto_ocupacion_path(prospecto_ocupacion) %></td>
+        <td><%= link_to 'Destroy', prospecto_ocupacion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Prospecto Ocupacion', new_prospecto_ocupacion_path %>

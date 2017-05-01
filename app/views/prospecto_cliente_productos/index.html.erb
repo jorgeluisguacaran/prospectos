@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Prospecto Cliente Productos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Prospecto</th>
+      <th>Producto</th>
+      <th>Cantidad</th>
+      <th>Fecha entrega</th>
+      <th>Fecha reposicion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @prospecto_cliente_productos.each do |prospecto_cliente_producto| %>
+      <tr>
+        <td><%= prospecto_cliente_producto.Prospecto %></td>
+        <td><%= prospecto_cliente_producto.Producto %></td>
+        <td><%= prospecto_cliente_producto.cantidad %></td>
+        <td><%= prospecto_cliente_producto.fecha_entrega %></td>
+        <td><%= prospecto_cliente_producto.fecha_reposicion %></td>
+        <td><%= link_to 'Show', prospecto_cliente_producto %></td>
+        <td><%= link_to 'Edit', edit_prospecto_cliente_producto_path(prospecto_cliente_producto) %></td>
+        <td><%= link_to 'Destroy', prospecto_cliente_producto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Prospecto Cliente Producto', new_prospecto_cliente_producto_path %>

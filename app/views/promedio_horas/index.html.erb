@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Promedio Horas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Descripcion</th>
+      <th>Estatus</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @promedio_horas.each do |promedio_hora| %>
+      <tr>
+        <td><%= promedio_hora.descripcion %></td>
+        <td><%= promedio_hora.estatus %></td>
+        <td><%= link_to 'Show', promedio_hora %></td>
+        <td><%= link_to 'Edit', edit_promedio_hora_path(promedio_hora) %></td>
+        <td><%= link_to 'Destroy', promedio_hora, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Promedio Hora', new_promedio_hora_path %>

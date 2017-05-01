@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @tipo_correo.descripcion %>
+</p>
+
+<p>
+  <strong>Estatus:</strong>
+  <%= @tipo_correo.estatus %>
+</p>
+
+<%= link_to 'Edit', edit_tipo_correo_path(@tipo_correo) %> |
+<%= link_to 'Back', tipo_correos_path %>

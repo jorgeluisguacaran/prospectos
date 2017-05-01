@@ -1,0 +1,2 @@
+json.extract! prospecto_seguimiento, :id, :Prospecto_id, :escala_interes, :ayuda_subir_nivel, :fecha_proxima_reunion, :aspira_salario, :PromedioHora_id, :PromedioMes_id, :dispuesto_a_comenzar, :estatus, :created_at, :updated_at
+json.url prospecto_seguimiento_url(prospecto_seguimiento, format: :json)

@@ -1,0 +1,2 @@
+module ProspectoMetaCortoPlazosHelper
+end

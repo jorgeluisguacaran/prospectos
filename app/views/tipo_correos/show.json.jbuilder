@@ -1,0 +1,1 @@
+json.partial! "tipo_correos/tipo_correo", tipo_correo: @tipo_correo

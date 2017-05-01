@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Prospectos</h1>
+
+<div class="table-responsive">
+
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr class="active">
+        <th>Nombre del Prospecto</th>
+        <th>Teléfono 1</th>
+        <th>Teléfono 2</th>
+        <th>¿A qué se dedica?</th>
+        <th>Email</th>
+        <th>Twitter</th>
+        <th>Facebook</th>
+        <th>Instagram</th>
+        <th>Donde se conocio</th>
+        <th>Marcas del Prospecto</th>
+<!--         <th>Buena referencia</th>
+        <th>Llamar en seis meses</th> -->
+        <th colspan="3">Acciones</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @prospectos.each do |prospecto| %>
+        <tr>
+          <td><%= prospecto.primer_nombre %></td>
+          <td><%= prospecto.telefono1 %></td>
+          <td><%= prospecto.telefono2 %></td>
+          <td><%= prospecto.dedicacion %></td>
+          <td><%= prospecto.correo %></td>
+          
+          <td><%= prospecto.twitter %></td>
+          <td><%= prospecto.facebook %></td>
+          <td><%= prospecto.instagram %></td>
+          <td><%= prospecto.donde_se_conocio %></td>
+          <td>
+          <% if prospecto.educable?  then %>
+                 <%=    "Educable"  %>
+            <% end %>
+            <% if prospecto.influyente? then %>
+            <%=  "Influyente"  %>
+            <% end %>
+            <% if prospecto.emprendedor? then  %>
+            <%=  "Emprendedor"  %>
+            <% end %>
+            <% if prospecto.exitoso? then  %>
+            <%=  "Exitoso" %>
+            <% end %> </td>
+
+<!--           <td><%= prospecto.buena_referencia %></td>
+          <td><%= prospecto.llamar_en_seis_meses %></td> -->
+          <td><%= link_to 'Ver', prospecto, class:"active" %></td>
+          <td><%= link_to 'Editar', edit_prospecto_path(prospecto) %><span class="glyphicon glyphicon-edit"></span> </td>
+          <td><%= link_to 'Eliminar', prospecto, method: :delete, data: { confirm: '¿Está seguro?' } %><span class="glyphicon glyphicon-edit"></span> </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+<br>
+
+<%= link_to 'Nuevo Prospecto', new_prospecto_path, class:"btn btn-primary" %>
+ 
+    
+
+  

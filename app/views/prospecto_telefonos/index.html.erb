@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Prospecto Telefonos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Prospecto</th>
+      <th>Telefono</th>
+      <th>Tipotelefono</th>
+      <th>Estatus</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @prospecto_telefonos.each do |prospecto_telefono| %>
+      <tr>
+        <td><%= prospecto_telefono.Prospecto %></td>
+        <td><%= prospecto_telefono.telefono %></td>
+        <td><%= prospecto_telefono.TipoTelefono %></td>
+        <td><%= prospecto_telefono.estatus %></td>
+        <td><%= link_to 'Show', prospecto_telefono %></td>
+        <td><%= link_to 'Edit', edit_prospecto_telefono_path(prospecto_telefono) %></td>
+        <td><%= link_to 'Destroy', prospecto_telefono, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Prospecto Telefono', new_prospecto_telefono_path %>

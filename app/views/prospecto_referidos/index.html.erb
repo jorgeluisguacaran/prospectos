@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Prospecto Referidos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Prospecto</th>
+      <th>Nombre referido</th>
+      <th>Ocupacion referido</th>
+      <th>Telefono referido</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @prospecto_referidos.each do |prospecto_referido| %>
+      <tr>
+        <td><%= prospecto_referido.Prospecto %></td>
+        <td><%= prospecto_referido.nombre_referido %></td>
+        <td><%= prospecto_referido.ocupacion_referido %></td>
+        <td><%= prospecto_referido.telefono_referido %></td>
+        <td><%= link_to 'Show', prospecto_referido %></td>
+        <td><%= link_to 'Edit', edit_prospecto_referido_path(prospecto_referido) %></td>
+        <td><%= link_to 'Destroy', prospecto_referido, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Prospecto Referido', new_prospecto_referido_path %>

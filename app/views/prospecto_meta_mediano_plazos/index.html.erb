@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Prospecto Meta Mediano Plazos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Prospecto</th>
+      <th>Meta mediana</th>
+      <th>Estatus</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @prospecto_meta_mediano_plazos.each do |prospecto_meta_mediano_plazo| %>
+      <tr>
+        <td><%= prospecto_meta_mediano_plazo.prospecto %></td>
+        <td><%= prospecto_meta_mediano_plazo.meta_mediana %></td>
+        <td><%= prospecto_meta_mediano_plazo.estatus %></td>
+        <td><%= link_to 'Show', prospecto_meta_mediano_plazo %></td>
+        <td><%= link_to 'Edit', edit_prospecto_meta_mediano_plazo_path(prospecto_meta_mediano_plazo) %></td>
+        <td><%= link_to 'Destroy', prospecto_meta_mediano_plazo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Prospecto Meta Mediano Plazo', new_prospecto_meta_mediano_plazo_path %>

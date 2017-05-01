@@ -1,0 +1,2 @@
+class PromedioHora < ApplicationRecord
+end

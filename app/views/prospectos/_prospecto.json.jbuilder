@@ -1,0 +1,2 @@
+json.extract! prospecto, :id, :primer_nombre, :segundo_nombre, :primer_apellido, :segundo_apellido, :cedula, :twitter, :facebook, :instagram, :donde_se_conocio, :google_plus, :buena_referencia, :llamar_en_seis_meses, :created_at, :updated_at
+json.url prospecto_url(prospecto, format: :json)

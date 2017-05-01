@@ -1,0 +1,2 @@
+class PromedioMe < ApplicationRecord
+end

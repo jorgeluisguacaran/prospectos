@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @plan.descripcion %>
+</p>
+
+<p>
+  <strong>Estatus:</strong>
+  <%= @plan.estatus %>
+</p>
+
+<%= link_to 'Edit', edit_plan_path(@plan) %> |
+<%= link_to 'Back', planes_path %>
