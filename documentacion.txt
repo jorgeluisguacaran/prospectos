@@ -1,0 +1,10 @@
+Usuario: michelmoreno2000@hotmail.com
+clave: 123456
+
+Considerar:
+1.- Estructurar Menu de acciones
+2.- Ordenar listado de prospectos segun las marcas, asi:
+    Exitoso
+    Influyente
+    Emprendedor
+    Educable
